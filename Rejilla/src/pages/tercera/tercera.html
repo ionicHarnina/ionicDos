@@ -1,0 +1,53 @@
+<ion-header>
+
+      <ion-navbar>
+        <!-- <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button> -->
+        <ion-title>Tercera</ion-title>
+        <!-- <button ion-button menuToggle> -->
+            <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-navbar>
+
+    </ion-header>
+
+
+    <ion-content>
+      <ion-grid>
+        <ion-row>
+          <!-- se especifica el numero de columnas para una pequeña con col-sm -->
+          <ion-col offset-3 class="cell-4">
+            1 de 3
+          </ion-col>
+          <!-- desplaza la casilla n columnas a la derecha -->
+          <ion-col  col-4 class="cell-3">
+            2 de 3
+          </ion-col>
+
+        </ion-row>
+        <!-- segunda fila -->
+        <ion-row>
+          <ion-col  push-3 class='cell-6'>
+            1 de 2
+          </ion-col>
+          <ion-col  class="cell-5" >
+            2 de 2
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col pull-2 class='cell-6'>
+            1 de 3
+          </ion-col>
+          <ion-col class="cell-5" >
+            2 de 3
+          </ion-col>
+          <ion-col pull-3 class="cell-3">
+            3 de 3
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </ion-content>
