@@ -1,0 +1,37 @@
+<!--
+  Generated template for the TaxPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Resultado Declaracion</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <h1>{{nombre}}</h1>
+  <ion-list>
+    <ion-list-header>Sperdpoderes Declarados</ion-list-header>
+    <ion-item>
+      <h1>SuperPoder</h1>
+      <h1 item-end>coste</h1>
+    </ion-item>
+    <ion-item *ngFor="let superPW of listaSP">
+      <h2>{{superPW.name}}</h2>
+      <h2 item-end>{{superPW.value}}</h2>
+    </ion-item>
+  </ion-list>
+  <ion-item>
+    <ion-label>Total</ion-label>
+    <h1 item-end>{{total}}</h1>
+  </ion-item>
+  <br>
+  <ion-item>
+  <h2>con Descuento</h2>
+  <h3 item-end>{{descuento}}</h3>
+  </ion-item>
+</ion-content>

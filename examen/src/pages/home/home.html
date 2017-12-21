@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Declaracion de la renta de Super Heroe
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    Nombre
+    <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+  </div>
+  <br>
+  <ion-list>
+    <ion-list-header>Poderes</ion-list-header>
+    <ion-item *ngFor="let superP of list">
+      <ion-label>{{superP}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <button ion-button (click)="doCheckbox()">Seleccionar poderes</button>
+  <ion-item *ngIf="powerButtonEnable">
+    <ion-label stacked>Misiones cumplidas con exito </ion-label>
+    <ion-input type='number' [(ngModel)]="missionAccomplished"></ion-input>
+  </ion-item>
+  <button ion-button (click)="permitirCalculo()">Calcular Renta</button>
+</ion-content>
